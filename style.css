@@ -1,0 +1,489 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ /* paleta de cores vivi */
+ :root {
+     --creme: #c7b79e;
+     --verde: #316156;
+     --rosa: #f59d95;
+     --bege: #F7EEDD;
+     --cinza: #F0F0F0;
+     --fundo: #1a1a1a;
+     --principal: var(--rosa);
+     --sombra: rgba(18, 51, 47, 0.08);
+ }
+
+ /*RESET BÁSICO  */
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0
+ }
+/*deixei a largura 100%
+mudei a fonte
+troquei a cor de fundo/texto*/
+ body {
+     height: 100%;
+     font-family: "Poppins", sans-serif;
+     font-weight: 100;
+     font-style: normal;
+     background: var(--fundo);
+     color: var(--principal);
+ }
+
+ /* MENU */
+
+ /* Aqui eu organizei os elementos do menu pra ficarem alinhados certinho,com espaço entre eles e bem centralizados. Também deixei um espaçamento interno pra não ficar tudo colado e coloquei uma linha embaixo só pra dar uma separada do resto da página. O menu fica preso no topo quando a página rola, com um fundo clarinho pra continuar legível, e configurado pra ficar sempre por cima dos outros elementos.*/
+ .cabecalho {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 22px 6%;
+     border-bottom: 1px solid var(--cinza);
+     position: sticky;
+     top: 0;
+     background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
+     backdrop-filter: saturate(120%);
+     z-index: 30
+ }
+ /* BOTÃO HAMBURGUER */
+.menu-hamburguer {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+ /*espaçamento interno entre os elementos*/
+ .menu-principal {
+     display: flex;
+     gap: 22px
+ }
+/*troquei a cor do texto tirei o _ e aumentei o peso da fonte*/
+ .menu-principal a {
+     color: var(--texto);
+     text-decoration: none;
+     font-weight: 500
+ }
+/* troquei a cor do botão e do texto, aumentei o tamnho do botão, e pus bordas, tirei o _ aumentei o peso da fonte e adicionei sombras*/
+ .botao-agendar-mini {
+     background: var(--verde);
+     color:var(--principal);
+     padding: 10px 16px;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: 600;
+     box-shadow: 0 8px 20px var(--sombra)
+ }
+
+ /* MENU */
+
+ /*Aqui eu organizei os elementos em linha, deixando um bom espaço entre eles e tudo bem alinhado.Coloquei um espaçamento interno maior pra dar mais destaque ao conteúdo e deixei as bordas de baixo arredondadas pra ficar mais bonito. O fundo recebe a cor principal do site, ajudando a destacar essa parte da página em relação ao resto.*/
+ .secao_topo {
+     display: flex;
+     gap: 40px;
+     align-items: center;
+     justify-content: space-between;
+     padding: 70px 6%;
+     border-bottom-left-radius: 40px;
+     border-bottom-right-radius: 40px;
+     background-color: var(--texto);
+ }
+/* o maximo é de 56% da largura do topo*/
+ .topo_texto {
+     max-width: 56%
+ }
+/*aqui eu aumentei a fonte, troquei a cor e aumentei a margem*/
+ .topo_texto h2 {
+     font-size: 2.6rem;
+     color: var(--principal);
+     line-height: 1.05;
+     margin-bottom: 18px
+ }
+ 
+/*aqui eu aumentei a fonte, mudei a cor de texto e adicionei margem*/
+ .topo_texto p {
+     font-size: 1.08rem;
+     font-weight: 300;
+     color: var(--bege);
+     margin-bottom: 22px
+ }
+/*adicionei o display flex e pus espaçamento externo*/
+ .grupo_botoes_topo {
+     display: flex;
+     gap: 14px
+ }
+/*mudei a cor do botão e da fonte, adicionei espaçamento, e bordas, aumentei o peso da fonte e coloquei sombras*/
+ .botao_principal {
+     background: var(--verde);
+     color: #fff;
+     padding: 14px 26px;
+     border-radius: 10px;
+     border: none;
+     cursor: pointer;
+     font-weight: 600;
+     box-shadow: 0 12px 30px rgba(18, 51, 47, 0.12)
+ }
+/*fiz a mesma coisa que eu primeiro botão porém o fundo é transparente*/
+ .botao_secundario {
+     background: transparent;
+     border: 1px solid var(--bege);
+     color: var(--principal);
+     padding: 12px 22px;
+     border-radius: 10px;
+     cursor: pointer;
+     font-weight: 600
+ }
+/*Aqui eu defini o tamanho do bloco, deixei as bordas arredondadas pra ficar mais moderno e apliquei um fundo em degradê suave.Também coloquei uma sombra pra dar sensação de profundidade.O conteúdo fica centralizado dentro dele e tudo que ultrapassar o limite é escondido pra manter o visual organizado.*/
+ .topo_imagem {
+     width: 380px;
+     height: 480px;
+     border-radius: 20px;
+     background: linear-gradient(180deg, var(--cinza), #e9e9e9);
+     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden
+ }
+/*Aqui eu faço o elemento ocupar todo o espaço disponível, ajustando o conteúdo pra preencher tudo sem deformar. ambém deixo como bloco pra evitar espaços estranhos e manter o layout certinho.*/
+ .topo_imagem img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block
+ }
+
+ /*CONTEÚDO PRINCIPAL */
+/*aumentei o tamanho interno*/
+ main {
+     padding: 64px 6%;
+ }
+/*aumentei a fonte,mudei a cor alinhei no centro e pus margem em cima*/
+ .titulo_secao {
+     font-size: 2rem;
+     color: var(--principal);
+     text-align: center;
+     margin-bottom: 28px
+ }
+
+ /* SOBRE */
+ /* Aqui eu organizei o layout em duas partes: uma área maior pro conteúdo principal e outra menor ao lado. Dei um espaço entre elas pra não ficar tudo apertado e alinhei tudo certinho. Também coloquei uma margem embaixo pra separar das próximas seções e um fundo diferente pra destacar essa parte da página.*/
+ .secao_sobre {
+     display: grid;
+     grid-template-columns: 1fr 420px;
+     gap: 40px;
+     align-items: center;
+     margin-bottom: 60px;
+     background-color: var(--bege);
+ }
+/*aumentei o peso da fonte mudei a cor e pus em linha*/
+ .secao_sobre p {
+    font-weight: 600;
+     color: var(--fundo);
+     line-height: 1.8;
+ }
+ /*troquei a cor e aumentei a largura*/
+ .titulo-sobre{
+    color: var(--verde);
+    width: 14px;
+ }
+/*mudei o fundo pus espaçamento externo coloquei bordas e sombras*/
+ .cartao_sobre {
+     background: var(--fundo-cartao);
+     padding: 26px;
+     border-radius: 16px;
+     box-shadow: 0 18px 50px rgba(18, 51, 47, 0.06);
+     border: 1px solid rgba(18, 51, 47, 0.03)
+ }
+ /* ATENDIMENTOS / CARTÕES */
+ /*/* 
+  Aqui eu criei uma grade que se adapta sozinha ao tamanho da tela, organizando os itens em colunas flexíveis. Assim tudo se encaixa bem no desktop e no celular sem quebrar o layout.Também deixei um espaço entre os itens e uma margem embaixo pra manter a página bem organizada.*/
+ .lista_atendimentos {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+     gap: 26px;
+     margin-bottom: 60px
+ }
+/* 
+  Aqui eu estilizei o bloco pra ficar com cara de card: fundo suave,
+  cantos arredondados e uma sombra leve pra dar destaque.Também adicionei uma animação suave pra quand ele se mover ou mudar,deixando a interação mais bonita e natural.
+*/
+ .cartao_atendimento {
+     background: var(--verde);
+     color: var(--bege);
+     padding: 24px;
+     border-radius: 14px;
+     border: 1px solid rgba(18, 51, 47, 0.04);
+     box-shadow: 0 10px 30px rgba(18, 51, 47, 0.06);
+     transition: transform .28s ease, box-shadow .28s ease
+ }
+/* quando passar o mouse vai dar mmovimento no site e mudar a intesidade da sombra*/
+ .cartao_atendimento:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 25px 60px rgba(18, 51, 47, 0.12)
+ }
+/*mudei a cor e pus margem*/
+ .cartao_atendimento h4 {
+     color: var(--principal);
+     margin-bottom: 8px
+ }
+/*mudei a cor*/
+ .cartao_atendimento p {
+     color: var(--secundaria)
+ }
+
+ /* DEPOIMENTOOS*/
+ /*adicionei margem*/
+ .secao_depoimentos {
+     margin: 70px 0
+ }
+/*deixei flexivel e alinhei no centro e pus espaçamento externo*/
+ .carrossel_area {
+     display: flex;
+     align-items: center;
+     gap: 18px;
+     background-color: var(--bege);
+ }
+/* 
+  Aqui eu estilizei um botão simples e discreto, sem fundo,com bordas arredondadas e um tamanho confortável pra clicar. O cursor muda pra mostrar que é clicável e o texto fica legível.
+*/
+ .botao_carrossel {
+     background: transparent;
+     border: 1px solid rgba(18, 51, 47, 0.08);
+     padding: 8px 12px;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 1rem
+ }
+/* Aqui eu usei o Flexbox pra alinhar os itens de forma prática e deixei o conteúdo dentro da caixa sem ultrapassar seus limites, escondendo qualquer excesso. Também adicionei bordas arredondadas pra dar um toque mais suave.
+*/
+ .lista_depoimentos {
+     display: flex;
+     overflow: hidden;
+     width: 100%;
+     border-radius: 16px
+ }
+/* Aqui eu organizei os itens com Flexbox e adicionei uma animação suave de transformação, que vai acontecer ao longo de 0.6 segundos com uma curva de velocidade que deixa o movimento mais fluido e natural.
+*/
+ .lista_interna {
+     display: flex;
+     transition: transform .6s cubic-bezier(.2, .9, .2, 1)
+ }
+/* 
+ Aqui eu defini que cada bloco ocupa toda a largura disponível,com bastante espaçamento interno pra deixar o conteúdo confortável. Usei um fundo em degradê pra ficar mais bonito e uma sombra leve pra dar profundidade.Também organizei os itens em linha, com espaço entre eles e tudo bem alinhado pra manter o visual limpo e agradável.
+*/
+ .depoimento_item {
+     min-width: 100%;
+     padding: 40px;
+     background-color: beige;
+     border-radius: 16px;
+     box-shadow: 0 20px 50px rgba(18, 51, 47, 0.06);
+     display: flex;
+     gap: 20px;
+     align-items: center
+ }
+
+ /* nessas tres caixas: 
+  Aqui eu cuidei do texto do depoimento pra ficar fácil de ler,
+  com tamanho confortável, boa altura de linha e uma cor suave. O nome do autor aparece logo abaixo, com um pouco de destaque pra ficar claro quem escreveu. Também deixei o item visível e na posição normal, preparando o efeito visual que é controlado depois pelo JavaScript.
+*/
+
+ .texto_depoimento {
+     font-size: 1.05rem;
+     color: var(--verde);
+     line-height: 1.6;
+     font-weight: 400;
+ }
+
+ .autor_depoimento {
+     display: block;
+     margin-top: 12px;
+     color: var(--secundaria);
+     font-weight: 600
+ }
+
+ /* fade in visual (controlado via JS) */
+ .depoimento_item {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+ /* VALORES */
+ /* Aqui eu organizei a lista pra ficar em linha, com espaço entre os itense tudo centralizado. Quando não cabe na tela, os itens quebram de linha automaticamente.Também tirei o estilo padrão da lista e deixei um espaço embaixo pra separar do próximo conteúdo.
+*/
+ .lista_valores {
+     display: flex;
+     gap: 18px;
+     justify-content: center;
+     flex-wrap: wrap;
+     list-style: none;
+     margin-bottom: 30px;
+     color: #1a1a1a;
+     
+ }
+/* 
+  Aqui eu estilizei cada item da lista pra ficar com um fundo suave,
+  bordas arredondadas e um destaque no texto, deixando ele mais visível. O botãozinho tem um toque de borda clara e uma cor de texto que combina com o resto do layout, deixando tudo organizado e moderno.
+*/
+
+ .lista_valores li {
+     background: var(--creme);
+     padding: 12px 18px;
+     border-radius: 999px;
+     font-weight: 600;
+     border: 1px solid rgba(18, 51, 47, 0.04)
+ }
+/* AGENDAMENTO*/
+/*alinhei no centro e pus margem*/
+ .secao_agenda {
+     text-align: center;
+     margin-bottom: 60px
+ }
+ .secao_agenda p{
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+ }
+/* 
+  Aqui eu criei o botão de agendamento com destaque,
+  usando a cor principal do site e texto branco pra contrastar.
+  O tamanho é confortável pra clicar e o formato arredondado
+  deixa o visual mais amigável.
+*/
+
+ .botao_agendar {
+     background: var(--principal);
+     color: #fff;
+     padding: 12px 22px;
+     border-radius: 10px;
+     border: none;
+     cursor: pointer;
+     font-weight: 600
+ }
+/*DUVIDAS*/
+/* 
+  Aqui eu estilizei o resumo do "details" pra parecer um botão clicável,
+  com um fundo verde e texto em contraste. O formato arredondado e a borda
+  suave deixam o visual mais clean e moderno.O texto ficou em negrito pra se destacar e a cor foi escolhida pra ficar legível sobre o fundo.
+*/
+details summary {
+     cursor: pointer;
+     padding: 12px;
+     border-radius: 10px;
+     background: var(--verde);
+     border: 1px solid rgba(18, 51, 47, 0.03);
+     font-weight: 700;
+     color:#e9e9e9
+ }
+/* Aqui eu dei um espaçamento interno pro parágrafo dentro do "details" pra deixar o texto mais confortável de ler. A fonte tem um peso leve pra não competir com o título, mantendo a leitura fluida.
+*/
+ details p {
+     padding: 12px;
+     font-weight: 400;
+ }
+
+ /* RODAPÉ  */
+ /* Aqui eu estilizei o rodapé com um fundo suave e a cor principal do site,deixando o texto mais destacado. Dei um bom espaçamento interno pra ficar organizado e confortável. As bordas arredondadas no topo ajudam a separar visualmente o rodapé do resto da página e dão um acabamento mais bonito.
+*/
+footer{
+     background:var(--bege);
+     color:var(--principal);
+     font-weight: 600;
+     padding: 36px 6%;
+     border-top-left-radius: 30px;
+     border-top-right-radius: 30px;
+     margin-top: 40px
+ }
+/* Aqui eu deixei o texto do rodapé um pouco mais suave,diminuindo levemente a opacidade pra não chamar mais atenção do que o conteúdo principal.
+*/
+ .rodape p {
+     opacity: 0.92
+ }
+
+ /* 
+  Aqui eu cuidei da versão mobile do site.
+
+  Quando a tela fica menor que 900px:
+  eu empilho os elementos do topo, centralizo os textos,
+  diminuo a imagem principal e faço a seção "sobre" virar
+  uma coluna só.
+  Também escondo o menu principal e ajusto o espaçamento
+  do cabeçalho pra caber melhor no celular.
+
+  Quando a tela fica menor que 520px:
+  eu diminuo ainda mais a imagem e o tamanho do título,
+  reorganizo o carrossel pra ficar em coluna
+  e mudo a ordem dos elementos pra funcionar melhor
+  em telas bem pequenas.
+*/
+
+ @media (max-width:900px) {
+      .menu-hamburguer {
+        display: block;
+    }
+
+    .menu-principal {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    .menu-principal.ativo {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+
+     .secao_topo {
+         flex-direction: column;
+         padding: 48px 6%
+     }
+
+     .topo_texto {
+         max-width: 100%;
+         text-align: center
+     }
+
+     .topo_imagem {
+         width: 320px;
+         height: 420px
+     }
+
+     .secao_sobre {
+         grid-template-columns: 1fr
+     }
+
+     .menu-principal {
+         display: none
+     }
+
+     .cabecalho {
+         padding: 18px
+     }
+ }
+
+ @media(max-width:520px) {
+     .topo_imagem {
+         width: 260px;
+         height: 340px
+     }
+
+     .topo_texto h2 {
+         font-size: 1.6rem
+     }
+
+     .carrossel_area {
+         flex-direction: column
+     }
+
+     .botao_carrossel {
+         order: 2
+     }
+
+     .lista_depoimentos {
+         order: 1
+     }
+ }

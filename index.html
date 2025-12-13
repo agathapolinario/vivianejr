@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viviane Júnior – Psicanalista</title>
+    <link rel="shortcut icon" href="_imagens/favi-icon.jpg" image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- TOPO / MENU -->
+    <header class="cabecalho">
+
+        <h1> Viviane Júnior</h1>
+        <!-- BOTÃO MENU HAMBURGUER (MOBILE) -->
+        <button class="menu-hamburguer" id="menu-hamburguer">
+            ☰
+        </button>
+        <nav class="menu-principal" id="menu-principal" aria-label="menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#atendimentos">Atendimentos</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato" class="botao-agendar-mini">Agendar</a>
+        </nav>
+    </header>
+    <!-- TOPO PRINCIPAL -->
+    <section class="secao_topo" id="inicio">
+        <div class="topo_texto">
+            <h2>Cuidar da mente é o primeiro passo para <strong> tranformar</strong> sua vida</h2>
+            <p>Psicoterapia é um espaço seguro de escuta, cuidado e transformação. Aqui, você não precisa fingir ser
+                forte o tempo todo.</p>
+            <!-- os botoes de chamada de ação ficara aqui-->
+            <div class="grupo_botoes_topo">
+                <!--  ao ser clicado, leva a pessoa
+  direto para a seção de contato da página. o google falou para utilizar scroll pq se não não ia e realmente não estava indo-->
+                <button class="botao_principal"
+                    onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' })">
+                    Agendar Sessão
+                </button>
+
+                <!-- ao ser clicado, leva a pessoa
+  direto para a sobre de contato da página.-->
+                <button class="botao_secundario"
+                    onclick="document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' })">
+                    Conhecer o Trabalho
+                </button>
+
+            </div>
+        </div>
+        <!-- imagem da vivi-->
+        <div class="topo_imagem">
+            <img src="_imagens/_viviane-maos.jpg" alt="Foto Viviane Júnior">
+        </div>
+    </section>
+    <!-- conteudo principal-->
+    <main>
+        <!-- SOBRE -->
+        <section id="sobre" class="secao_sobre">
+            <div>
+                <h3 class="titulo_secao">Sobre Viviane</h3>
+                <div class="cartao_sobre">
+                    <!-- textos -->
+                    <p>Minha caminhada profissional começou na Pedagogia, passou pelas Ciências Biológicas e encontrou
+                        na Psicanálise um propósito: cuidar da saúde emocional de forma profunda e humanizada.
+
+                    </p>
+                    <p>A soma dessas formações molda meu olhar sensível e técnico sobre o ser humano. Hoje, atendo
+                        adutos em geral, oferecendo um espaço seguro para quem busca se compreender, se fortalecer e
+                        transformar sua história.</p>
+                </div>
+            </div>
+            <!-- texto pequeno destacando as especialidades-->
+            <aside>
+                <div class="cartao_sobre">
+                    <h4 class="titulo-sobre"> Especialidades</h4>
+                    <p>Atendimento individual, terapia para mulheres,adultos, orientações sobre ansiedade e processos de luto.</p>
+                </div>
+            </aside>
+        </section>
+        <!-- ATENDIMENTOS -->
+        <section id="atendimentos">
+            <h3 class="titulo_secao">Atendimentos</h3>
+            <div class="lista_atendimentos">
+                <article class="cartao_atendimento">
+                    <h4>Psicanálise Individual</h4>
+                    <p>Sessões com foco no autoconhecimento e elaboração emocional.</p>
+                </article>
+                <article class="cartao_atendimento">
+                    <h4>Atendimento Online</h4>
+                    <p>Com segurança, confidencialidade e conforto no seu ambiente.</p>
+                </article>
+                <article class="cartao_atendimento">
+                    <h4>Atendimento Presencial</h4>
+                    <p>O atendimento presencial é realizado somente mediante consulta e alinhamento prévio, conforme disponibilidade. Para saber mais, entre em contato..</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS (carrossel com fotos) -->
+        <section id="depoimentos" class="secao_depoimentos">
+            <h3 class="titulo_secao">Depoimentos</h3>
+
+            <div class="carrossel_area">
+                <button class="botao_carrossel" id="botao-voltar" aria-label="voltar depoimento">◀</button>
+
+                <div class="lista_depoimentos" role="list">
+                    <div class="lista_interna" id="lista-interna">
+
+                        <div class="depoimento_item" role="listitem">
+                            <div class="texto_depoimento">
+                                “Me senti acolhida desde a primeira sessão. Viviane transmite calma e clareza.”
+                            </div>
+                            <span class="autor_depoimento">- Marina S.</span>
+                        </div>
+
+                        <div class="depoimento_item" role="listitem">
+                            <div class="texto_depoimento">
+                                “Consegui compreender sentimentos que carreguei por anos. Sou muito grata.”
+                            </div>
+                            <span class="autor_depoimento">- Bianca W.</span>
+                        </div>
+
+                        <div class="depoimento_item" role="listitem">
+                            <div class="texto_depoimento">
+                                “A terapia trouxe novas perspectivas para minha vida e minhas relações.”
+                            </div>
+                            <span class="autor_depoimento">- Carla T.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="botao_carrossel" id="botao-avancar" aria-label="avançar depoimento">▶</button>
+            </div>
+        </section>
+        <!-- VALORES -->
+        <section class="valores">
+            <h3 class="titulo_secao">Valores da prática</h3>
+            <ul class="lista_valores" role="list">
+                <li role="listitem">Acolhimento</li>
+                <li role="listitem">Escuta Atenta</li>
+                <li role="listitem">Sigilo</li>
+                <li role="listitem">Humanização</li>
+            </ul>
+        </section>
+        <!-- AGENDA -->
+        <section class="secao_agenda" id="contato">
+            <h3 class="titulo_secao">Agende sua sessão</h3>
+            <p>Escolha dia e horário — atendimentos presenciais e online. Para agendar, envie mensagem pelo WhatsApp.
+            </p>
+            <button class="botao_agendar" onclick="abrir_whatsapp()">Agendar via WhatsApp</button>
+        </section>
+        <!-- DÚVIDAS FREQUENTES -->
+        <section class="secao_duvidas">
+            <h3 class="titulo_secao">Dúvidas frequentes</h3>
+            <details>
+                <summary>Como funciona a primeira sessão?</summary>
+                <p>A primeira sessão é um encontro de acolhimento e entendimento. Conversamos sobre suas motivações e
+                    objetivos.</p>
+            </details>
+            <details>
+                <summary>Qual a duração das sessões?</summary>
+                <p>Geralmente 50 minuto mas podemos alinhar conforme necessidade.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>WhatsApp: (11) 96313-6037 • </p>
+        <p>© 2025 Viviane Júnior — Psicanalista</p>
+    </footer>
+    <!-- LIBRAS-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <!--libras-->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
