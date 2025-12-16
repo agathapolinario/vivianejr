@@ -28,7 +28,7 @@ troquei a cor de fundo/texto*/
      font-style: normal;
      background: var(--fundo);
      color: var(--principal);
-     overflow: hidden;
+     
  }
 
  /* MENU */
@@ -422,7 +422,7 @@ footer{
 
     /* MENU */
     .menu-hamburguer {
-        display: block;
+        display: block; /* Aparece no mobile */
     }
 
     .menu-principal {
@@ -433,7 +433,7 @@ footer{
     }
 
     .menu-principal.ativo {
-        display: flex;
+        display: flex; /* Garante que o menu apareça */
     }
 
     .cabecalho {
@@ -452,34 +452,32 @@ footer{
     }
 
     .topo_imagem {
-        width: 320px;
-        height: 420px;
+        width: 100%; /* Ajuste para que a imagem ocupe toda a largura */
+        height: auto; /* Altura ajustada automaticamente */
+        object-fit: cover; /* Garante o ajuste perfeito da imagem */
     }
 
     /* SOBRE */
     .secao_sobre {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Coloca tudo em uma coluna */
     }
 
-    /* ==========================
-       DEPOIMENTOS (AJUSTE REAL)
-       ========================== */
-
+    /* DEPOIMENTOS */
     .carrossel_area {
         gap: 12px;
     }
 
     .depoimento_item {
-        padding: 24px;              /* diminui a caixa */
+        padding: 24px;
         gap: 12px;
-        align-items: flex-start;    /* evita centralizar texto estranho */
+        align-items: flex-start;
     }
 
     .texto_depoimento {
-        font-size: 0.95rem;         /* diminui levemente o texto */
+        font-size: 0.95rem; 
         line-height: 1.5;
         word-break: normal;
-        overflow-wrap: break-word;  /* quebra correta, sem cortar */
+        overflow-wrap: break-word;
     }
 }
 
@@ -487,18 +485,15 @@ footer{
 
     /* TOPO */
     .topo_imagem {
-        width: 260px;
-        height: 340px;
+        width: 90%; /* Ajusta a imagem para telas bem pequenas */
+        height: auto;
     }
 
     .topo_texto h2 {
         font-size: 1.6rem;
     }
 
-    /* ==========================
-       DEPOIMENTOS (CELULAR PEQUENO)
-       ========================== */
-
+    /* DEPOIMENTOS (Celular Pequeno) */
     .depoimento_item {
         padding: 20px;
     }
@@ -511,4 +506,3 @@ footer{
         font-size: 0.85rem;
     }
 }
-
