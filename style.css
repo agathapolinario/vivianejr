@@ -18,11 +18,13 @@
      margin: 0;
      padding: 0
  }
-/*deixei a largura 100%
+
+ /*deixei a largura 100%
 mudei a fonte
 troquei a cor de fundo/texto*/
  body {
      height: 100%;
+     overflow-x: hidden;
      font-family: "Poppins", sans-serif;
      font-weight: 100;
      font-style: normal;
@@ -45,29 +47,33 @@ troquei a cor de fundo/texto*/
      backdrop-filter: saturate(120%);
      z-index: 30
  }
+
  /* BOTÃO HAMBURGUER */
-.menu-hamburguer {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+ .menu-hamburguer {
+     display: none;
+     font-size: 2rem;
+     background: none;
+     border: none;
+     cursor: pointer;
+ }
+
  /*espaçamento interno entre os elementos*/
  .menu-principal {
      display: flex;
      gap: 22px
  }
-/*troquei a cor do texto tirei o _ e aumentei o peso da fonte*/
+
+ /*troquei a cor do texto tirei o _ e aumentei o peso da fonte*/
  .menu-principal a {
      color: var(--texto);
      text-decoration: none;
      font-weight: 500
  }
-/* troquei a cor do botão e do texto, aumentei o tamnho do botão, e pus bordas, tirei o _ aumentei o peso da fonte e adicionei sombras*/
+
+ /* troquei a cor do botão e do texto, aumentei o tamnho do botão, e pus bordas, tirei o _ aumentei o peso da fonte e adicionei sombras*/
  .botao-agendar-mini {
      background: var(--verde);
-     color:var(--principal);
+     color: var(--principal);
      padding: 10px 16px;
      border-radius: 8px;
      text-decoration: none;
@@ -88,31 +94,35 @@ troquei a cor de fundo/texto*/
      border-bottom-right-radius: 40px;
      background-color: var(--texto);
  }
-/* o maximo é de 56% da largura do topo*/
+
+ /* o maximo é de 56% da largura do topo*/
  .topo_texto {
-     max-width: 56%
+     max-width: 600px;
  }
-/*aqui eu aumentei a fonte, troquei a cor e aumentei a margem*/
+
+ /*aqui eu aumentei a fonte, troquei a cor e aumentei a margem*/
  .topo_texto h2 {
      font-size: 2.6rem;
      color: var(--principal);
      line-height: 1.05;
      margin-bottom: 18px
  }
- 
-/*aqui eu aumentei a fonte, mudei a cor de texto e adicionei margem*/
+
+ /*aqui eu aumentei a fonte, mudei a cor de texto e adicionei margem*/
  .topo_texto p {
      font-size: 1.08rem;
      font-weight: 300;
      color: var(--bege);
      margin-bottom: 22px
  }
-/*adicionei o display flex e pus espaçamento externo*/
+
+ /*adicionei o display flex e pus espaçamento externo*/
  .grupo_botoes_topo {
      display: flex;
      gap: 14px
  }
-/*mudei a cor do botão e da fonte, adicionei espaçamento, e bordas, aumentei o peso da fonte e coloquei sombras*/
+
+ /*mudei a cor do botão e da fonte, adicionei espaçamento, e bordas, aumentei o peso da fonte e coloquei sombras*/
  .botao_principal {
      background: var(--verde);
      color: #fff;
@@ -123,7 +133,8 @@ troquei a cor de fundo/texto*/
      font-weight: 600;
      box-shadow: 0 12px 30px rgba(18, 51, 47, 0.12)
  }
-/*fiz a mesma coisa que eu primeiro botão porém o fundo é transparente*/
+
+ /*fiz a mesma coisa que eu primeiro botão porém o fundo é transparente*/
  .botao_secundario {
      background: transparent;
      border: 1px solid var(--bege);
@@ -133,7 +144,8 @@ troquei a cor de fundo/texto*/
      cursor: pointer;
      font-weight: 600
  }
-/*Aqui eu defini o tamanho do bloco, deixei as bordas arredondadas pra ficar mais moderno e apliquei um fundo em degradê suave.Também coloquei uma sombra pra dar sensação de profundidade.O conteúdo fica centralizado dentro dele e tudo que ultrapassar o limite é escondido pra manter o visual organizado.*/
+
+ /*Aqui eu defini o tamanho do bloco, deixei as bordas arredondadas pra ficar mais moderno e apliquei um fundo em degradê suave.Também coloquei uma sombra pra dar sensação de profundidade.O conteúdo fica centralizado dentro dele e tudo que ultrapassar o limite é escondido pra manter o visual organizado.*/
  .topo_imagem {
      width: 380px;
      height: 480px;
@@ -145,7 +157,8 @@ troquei a cor de fundo/texto*/
      justify-content: center;
      overflow: hidden
  }
-/*Aqui eu faço o elemento ocupar todo o espaço disponível, ajustando o conteúdo pra preencher tudo sem deformar. ambém deixo como bloco pra evitar espaços estranhos e manter o layout certinho.*/
+
+ /*Aqui eu faço o elemento ocupar todo o espaço disponível, ajustando o conteúdo pra preencher tudo sem deformar. ambém deixo como bloco pra evitar espaços estranhos e manter o layout certinho.*/
  .topo_imagem img {
      width: 100%;
      height: 100%;
@@ -154,11 +167,12 @@ troquei a cor de fundo/texto*/
  }
 
  /*CONTEÚDO PRINCIPAL */
-/*aumentei o tamanho interno*/
+ /*aumentei o tamanho interno*/
  main {
      padding: 64px 6%;
  }
-/*aumentei a fonte,mudei a cor alinhei no centro e pus margem em cima*/
+
+ /*aumentei a fonte,mudei a cor alinhei no centro e pus margem em cima*/
  .titulo_secao {
      font-size: 2rem;
      color: var(--principal);
@@ -176,18 +190,21 @@ troquei a cor de fundo/texto*/
      margin-bottom: 60px;
      background-color: var(--bege);
  }
-/*aumentei o peso da fonte mudei a cor e pus em linha*/
+
+ /*aumentei o peso da fonte mudei a cor e pus em linha*/
  .secao_sobre p {
-    font-weight: 600;
+     font-weight: 600;
      color: var(--fundo);
      line-height: 1.8;
  }
+
  /*troquei a cor e aumentei a largura*/
- .titulo-sobre{
-    color: var(--verde);
-    width: 14px;
+ .titulo-sobre {
+     color: var(--verde);
+     width: 14px;
  }
-/*mudei o fundo pus espaçamento externo coloquei bordas e sombras*/
+
+ /*mudei o fundo pus espaçamento externo coloquei bordas e sombras*/
  .cartao_sobre {
      background: var(--fundo-cartao);
      padding: 26px;
@@ -195,6 +212,7 @@ troquei a cor de fundo/texto*/
      box-shadow: 0 18px 50px rgba(18, 51, 47, 0.06);
      border: 1px solid rgba(18, 51, 47, 0.03)
  }
+
  /* ATENDIMENTOS / CARTÕES */
  /*/* 
   Aqui eu criei uma grade que se adapta sozinha ao tamanho da tela, organizando os itens em colunas flexíveis. Assim tudo se encaixa bem no desktop e no celular sem quebrar o layout.Também deixei um espaço entre os itens e uma margem embaixo pra manter a página bem organizada.*/
@@ -204,7 +222,8 @@ troquei a cor de fundo/texto*/
      gap: 26px;
      margin-bottom: 60px
  }
-/* 
+
+ /* 
   Aqui eu estilizei o bloco pra ficar com cara de card: fundo suave,
   cantos arredondados e uma sombra leve pra dar destaque.Também adicionei uma animação suave pra quand ele se mover ou mudar,deixando a interação mais bonita e natural.
 */
@@ -217,17 +236,20 @@ troquei a cor de fundo/texto*/
      box-shadow: 0 10px 30px rgba(18, 51, 47, 0.06);
      transition: transform .28s ease, box-shadow .28s ease
  }
-/* quando passar o mouse vai dar mmovimento no site e mudar a intesidade da sombra*/
+
+ /* quando passar o mouse vai dar mmovimento no site e mudar a intesidade da sombra*/
  .cartao_atendimento:hover {
      transform: translateY(-8px);
      box-shadow: 0 25px 60px rgba(18, 51, 47, 0.12)
  }
-/*mudei a cor e pus margem*/
+
+ /*mudei a cor e pus margem*/
  .cartao_atendimento h4 {
      color: var(--principal);
      margin-bottom: 8px
  }
-/*mudei a cor*/
+
+ /*mudei a cor*/
  .cartao_atendimento p {
      color: var(--secundaria)
  }
@@ -235,16 +257,21 @@ troquei a cor de fundo/texto*/
  /* DEPOIMENTOOS*/
  /*adicionei margem*/
  .secao_depoimentos {
-     margin: 70px 0
+     padding: 60px 20px;
+     overflow: hidden;
  }
-/*deixei flexivel e alinhei no centro e pus espaçamento externo*/
+
+ /*deixei flexivel e alinhei no centro e pus espaçamento externo*/
  .carrossel_area {
      display: flex;
      align-items: center;
-     gap: 18px;
+     justify-content: center;
+     gap: 10px;
+     max-width: 100%;
      background-color: var(--bege);
  }
-/* 
+
+ /* 
   Aqui eu estilizei um botão simples e discreto, sem fundo,com bordas arredondadas e um tamanho confortável pra clicar. O cursor muda pra mostrar que é clicável e o texto fica legível.
 */
  .botao_carrossel {
@@ -255,7 +282,8 @@ troquei a cor de fundo/texto*/
      cursor: pointer;
      font-size: 1rem
  }
-/* Aqui eu usei o Flexbox pra alinhar os itens de forma prática e deixei o conteúdo dentro da caixa sem ultrapassar seus limites, escondendo qualquer excesso. Também adicionei bordas arredondadas pra dar um toque mais suave.
+
+ /* Aqui eu usei o Flexbox pra alinhar os itens de forma prática e deixei o conteúdo dentro da caixa sem ultrapassar seus limites, escondendo qualquer excesso. Também adicionei bordas arredondadas pra dar um toque mais suave.
 */
  .lista_depoimentos {
      display: flex;
@@ -263,13 +291,15 @@ troquei a cor de fundo/texto*/
      width: 100%;
      border-radius: 16px
  }
-/* Aqui eu organizei os itens com Flexbox e adicionei uma animação suave de transformação, que vai acontecer ao longo de 0.6 segundos com uma curva de velocidade que deixa o movimento mais fluido e natural.
+
+ /* Aqui eu organizei os itens com Flexbox e adicionei uma animação suave de transformação, que vai acontecer ao longo de 0.6 segundos com uma curva de velocidade que deixa o movimento mais fluido e natural.
 */
  .lista_interna {
      display: flex;
      transition: transform .6s cubic-bezier(.2, .9, .2, 1)
  }
-/* 
+
+ /* 
  Aqui eu defini que cada bloco ocupa toda a largura disponível,com bastante espaçamento interno pra deixar o conteúdo confortável. Usei um fundo em degradê pra ficar mais bonito e uma sombra leve pra dar profundidade.Também organizei os itens em linha, com espaço entre eles e tudo bem alinhado pra manter o visual limpo e agradável.
 */
  .depoimento_item {
@@ -319,9 +349,10 @@ troquei a cor de fundo/texto*/
      list-style: none;
      margin-bottom: 30px;
      color: #1a1a1a;
-     
+
  }
-/* 
+
+ /* 
   Aqui eu estilizei cada item da lista pra ficar com um fundo suave,
   bordas arredondadas e um destaque no texto, deixando ele mais visível. O botãozinho tem um toque de borda clara e uma cor de texto que combina com o resto do layout, deixando tudo organizado e moderno.
 */
@@ -333,18 +364,21 @@ troquei a cor de fundo/texto*/
      font-weight: 600;
      border: 1px solid rgba(18, 51, 47, 0.04)
  }
-/* AGENDAMENTO*/
-/*alinhei no centro e pus margem*/
+
+ /* AGENDAMENTO*/
+ /*alinhei no centro e pus margem*/
  .secao_agenda {
      text-align: center;
      margin-bottom: 60px
  }
- .secao_agenda p{
-    font-weight: 600;
-    color: white;
-    margin-bottom: 30px;
+
+ .secao_agenda p {
+     font-weight: 600;
+     color: white;
+     margin-bottom: 30px;
  }
-/* 
+
+ /* 
   Aqui eu criei o botão de agendamento com destaque,
   usando a cor principal do site e texto branco pra contrastar.
   O tamanho é confortável pra clicar e o formato arredondado
@@ -360,22 +394,24 @@ troquei a cor de fundo/texto*/
      cursor: pointer;
      font-weight: 600
  }
-/*DUVIDAS*/
-/* 
+
+ /*DUVIDAS*/
+ /* 
   Aqui eu estilizei o resumo do "details" pra parecer um botão clicável,
   com um fundo verde e texto em contraste. O formato arredondado e a borda
   suave deixam o visual mais clean e moderno.O texto ficou em negrito pra se destacar e a cor foi escolhida pra ficar legível sobre o fundo.
 */
-details summary {
+ details summary {
      cursor: pointer;
      padding: 12px;
      border-radius: 10px;
      background: var(--verde);
      border: 1px solid rgba(18, 51, 47, 0.03);
      font-weight: 700;
-     color:#e9e9e9
+     color: #e9e9e9
  }
-/* Aqui eu dei um espaçamento interno pro parágrafo dentro do "details" pra deixar o texto mais confortável de ler. A fonte tem um peso leve pra não competir com o título, mantendo a leitura fluida.
+
+ /* Aqui eu dei um espaçamento interno pro parágrafo dentro do "details" pra deixar o texto mais confortável de ler. A fonte tem um peso leve pra não competir com o título, mantendo a leitura fluida.
 */
  details p {
      padding: 12px;
@@ -385,16 +421,17 @@ details summary {
  /* RODAPÉ  */
  /* Aqui eu estilizei o rodapé com um fundo suave e a cor principal do site,deixando o texto mais destacado. Dei um bom espaçamento interno pra ficar organizado e confortável. As bordas arredondadas no topo ajudam a separar visualmente o rodapé do resto da página e dão um acabamento mais bonito.
 */
-footer{
-     background:var(--bege);
-     color:var(--principal);
+ footer {
+     background: var(--bege);
+     color: var(--principal);
      font-weight: 600;
      padding: 36px 6%;
      border-top-left-radius: 30px;
      border-top-right-radius: 30px;
      margin-top: 40px
  }
-/* Aqui eu deixei o texto do rodapé um pouco mais suave,diminuindo levemente a opacidade pra não chamar mais atenção do que o conteúdo principal.
+
+ /* Aqui eu deixei o texto do rodapé um pouco mais suave,diminuindo levemente a opacidade pra não chamar mais atenção do que o conteúdo principal.
 */
  .rodape p {
      opacity: 0.92
@@ -417,8 +454,10 @@ footer{
   em telas bem pequenas.
 */
 
- @media (max-width:900px) {
-      .menu-hamburguer {
+@media (max-width: 900px) {
+
+    /* MENU */
+    .menu-hamburguer {
         display: block;
     }
 
@@ -427,63 +466,110 @@ footer{
         flex-direction: column;
         gap: 16px;
         margin-top: 16px;
+        width: 100%;
+        align-items: center;
     }
 
     .menu-principal.ativo {
         display: flex;
-        flex-direction: column;
-        gap: 16px;
-        margin-top: 16px;
     }
 
+    .cabecalho {
+        padding: 18px;
+    }
 
-     .secao_topo {
-         flex-direction: column;
-         padding: 48px 6%
-     }
+    /* TOPO */
+    .secao_topo {
+        flex-direction: column;
+        padding: 48px 6%;
+        text-align: center;
+    }
 
-     .topo_texto {
-         max-width: 100%;
-         text-align: center
-     }
+    .topo_texto {
+        max-width: 100%;
+    }
 
-     .topo_imagem {
-         width: 320px;
-         height: 420px
-     }
+    .grupo_botoes_topo {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-     .secao_sobre {
-         grid-template-columns: 1fr
-     }
+    .topo_imagem {
+        width: 320px;
+        height: 420px;
+    }
 
-     .menu-principal {
-         display: none
-     }
+    /* SOBRE */
+    .secao_sobre {
+        grid-template-columns: 1fr;
+        padding: 32px;
+    }
 
-     .cabecalho {
-         padding: 18px
-     }
- }
+    /* ATENDIMENTOS */
+    .lista_atendimentos {
+        gap: 20px;
+    }
 
- @media(max-width:520px) {
-     .topo_imagem {
-         width: 260px;
-         height: 340px
-     }
+    /* 🔥 DEPOIMENTOS — MANTÉM IGUAL AO DESKTOP 🔥 */
+    .carrossel_area {
+        flex-direction: row; /* NÃO MUDA */
+        gap: 8px;
+    }
 
-     .topo_texto h2 {
-         font-size: 1.6rem
-     }
+    .lista_depoimentos {
+        max-width: 100%;
+    }
 
-     .carrossel_area {
-         flex-direction: column
-     }
+    .depoimento_item {
+        padding: 28px; /* só reduz espaço */
+        display: flex;
+        flex-direction: row; /* IGUAL PC */
+        align-items: center;
+        text-align: left; /* IGUAL PC */
+    }
 
-     .botao_carrossel {
-         order: 2
-     }
+    .texto_depoimento {
+        font-size: 1rem;
+        max-width: 100%;
+    }
 
-     .lista_depoimentos {
-         order: 1
-     }
- }
+    /* VALORES */
+    .lista_valores {
+        gap: 12px;
+    }
+
+    /* AGENDA */
+    .secao_agenda {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    /* TOPO */
+    .topo_imagem {
+        width: 260px;
+        height: 340px;
+    }
+
+    .topo_texto h2 {
+        font-size: 1.6rem;
+    }
+
+    /* 🔥 DEPOIMENTOS — AINDA IGUAL AO DESKTOP 🔥 */
+    .depoimento_item {
+        padding: 20px;
+        flex-direction: row; /* NÃO EMPILHA */
+        text-align: left;
+    }
+
+    .texto_depoimento {
+        font-size: 0.95rem;
+    }
+
+    /* RODAPÉ */
+    footer {
+        text-align: center;
+    }
+}
+
